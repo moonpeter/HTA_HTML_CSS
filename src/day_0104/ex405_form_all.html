@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM 입력 예제</title>
+</head>
+<body>
+<form action="result.html" method="post">
+    <h4>다양한 입력 폼</h4>
+    <p>성명 : <input type="text"> <br>
+    성별 : <input type="radio" name="gender" value="남" checked>남성
+        <input type="radio" name="gender" value="여">여성 <br>
+    과목 :
+        <select name="subject" size="1">
+            <option value="java" selected>자바</option>
+            <option value="python">파이썬</option>
+        </select>
+    <p>고입희망분야(복수선택 가능)<br>
+    -분야 :
+        <input type="checkbox" name="field" value="com">컴퓨터
+        <input type="checkbox" name="field" value="eco">경제
+        <input type="checkbox" name="field" value="sense">상식
+    </p>
+    <p>비고 :<br>
+        <textarea name="" id="" cols="40" rows="4">나는 <textarea>입니다. 속성은 rows="4" cols="40" 입니다.
+        </textarea>
+    </p>
+    파일 업로드하기 <br>
+        <input type="file" name="myfile">
+    <hr>
+    <input type="submit" value="전송">
+    <input type="reset" value="취소">
+</form>
+</body>
+</html>
