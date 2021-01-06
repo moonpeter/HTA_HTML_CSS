@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            list-style-type: none
+        }
+
+        ol > li {
+            list-style-type: upper-alpha
+        }
+
+        ul li {
+            list-style-type: circle
+        }
+
+        ul li + li {
+            list-style-type: disc
+        }
+
+        ul li + li + li {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+<h3>과목별 추천 도서 목록</h3>
+<ol>
+    <li>흥부와 놀부</li>
+    <ul>
+        <li>제비</li>
+        <li>흥부</li>
+        <li>부자</li>
+    </ul>
+    <li>파우스트</li>
+    <ul>
+        <li>요한 볼프강 괴테</li>
+        <li>'멈춰라 너 정말 아름답구나'</li>
+        <li>불완전한 존재</li>
+    </ul>
+</ol>
+</body>
+</html>

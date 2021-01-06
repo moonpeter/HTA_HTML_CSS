@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span {
+            display: none;
+            width: 800px;
+            height: 100px;
+            background-color: pink;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        div:hover + span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div>여기에 커서를 갖다 놓으세요</div>
+<span>나는 보여요</span>
+</body>
+</html>
