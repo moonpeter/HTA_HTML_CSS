@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            width: 100px;
+            text-align: center;
+            display: inline-block;
+            border: 1px black solid;
+            margin-right: -4px;
+            padding: 25px;
+        }
+
+        li:nth-child(n) {
+            background-color: darkred;
+        }
+
+        li:nth-child(2n) {
+            background-color: red;
+        }
+
+        li:nth-child(1) {
+            border-radius: 10px 0 0 10px;
+        }
+
+        li:nth-child(7) {
+            border-radius: 0 10px 10px 0;
+        }
+        ul { margin: 0}
+        p {
+            padding-left: 40px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fourth</li>
+    <li>fifth</li>
+    <li>sixth</li>
+    <li>seventh</li>
+</ul>
+<p>나는 꿈톨이입니다.</p>
+</body>
+</html>
