@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        body > div {
-            margin: 0 auto;
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
             padding: 20px;
-            background: lightgrey;
-            width: 500px;
-            /*text-align: center;*/
-            border-radius: 10px;
         }
 
         h3 {
@@ -21,36 +18,37 @@
             display: block;
         }
 
-        input, select, textarea {
-            background: pink;
-            width: 500px;
-            margin-bottom: 10px;
+        input[type=text], select, textarea, #check, #radio {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
         }
 
-        #radio > label:nth-child(1) {
-            background: yellow;
-            display: block;
+        label {
+            display: inline-block;
         }
 
-        #radio {
+        #radio, #check {
+            background-color: white;
         }
 
-        body > div > form > input[type=submit]:nth-child(15) {
+
+        input[type=submit], input[type=reset] {
             width: 100px;
-            height: 30px;
+            height: 50px;
             background: olivedrab;
             color: white;
             border: none;
             border-radius: 5px;
         }
 
-        body > div > form > input[type=reset]:nth-child(16) {
-            width: 100px;
-            height: 30px;
+        input[type=reset] {
             background: red;
-            color: white;
-            border: none;
-            border-radius: 5px;
         }
 
     </style>
@@ -76,29 +74,29 @@
         <textarea name="intro" id="intro" placeholder="자기를 소개해보세요" style="height: 200px"></textarea>
         <label>성별</label><br>
         <div id="radio">
-            <label for="">
+            <label>
                 <input type="radio" name="gender" value="1">남자
             </label>
-            <label for="">
+            <label>
                 <input type="radio" name="gender" value="2">여자
             </label>
         </div>
 
-        <label for="">취미</label><br>
+        <label>취미</label><br>
         <div id="check">
-            <label for="">
+            <label>
                 <input type="checkbox" name="hobby" value="10">공부
             </label>
-            <label for="">
+            <label>
                 <input type="checkbox" name="hobby" value="20">게임
             </label>
-            <label for="">
+            <label>
                 <input type="checkbox" name="hobby" value="30">낚시
             </label>
-            <label for="">
+            <label>
                 <input type="checkbox" name="hobby" value="40">운동
             </label>
-            <label for="">
+            <label>
                 <input type="checkbox" name="hobby" value="50">음악감상
             </label>
         </div>
