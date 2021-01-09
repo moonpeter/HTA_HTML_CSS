@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body > div {
+            margin: 0 auto;
+            padding: 20px;
+            background: lightgrey;
+            width: 500px;
+            /*text-align: center;*/
+            border-radius: 10px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+        }
+
+        input, select, textarea {
+            background: pink;
+            width: 500px;
+            margin-bottom: 10px;
+        }
+
+        #radio > label:nth-child(1) {
+            background: yellow;
+            display: block;
+        }
+
+        #radio {
+        }
+
+        body > div > form > input[type=submit]:nth-child(15) {
+            width: 100px;
+            height: 30px;
+            background: olivedrab;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        body > div > form > input[type=reset]:nth-child(16) {
+            width: 100px;
+            height: 30px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>자기소개</h3>
+    <form action="result.html">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" placeholder="이름을 입력해주세요">
+
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age" placeholder="나이를 입력해주세요">
+
+        <label for="address">주소</label>
+        <select name="address" id="address">
+            <option value="seoul">서울</option>
+            <option value="busan">부산</option>
+            <option value="jeju">제주</option>
+        </select>
+
+        <label for="intro">자기소개</label>
+        <textarea name="intro" id="intro" placeholder="자기를 소개해보세요" style="height: 200px"></textarea>
+        <label>성별</label><br>
+        <div id="radio">
+            <label for="">
+                <input type="radio" name="gender" value="1">남자
+            </label>
+            <label for="">
+                <input type="radio" name="gender" value="2">여자
+            </label>
+        </div>
+
+        <label for="">취미</label><br>
+        <div id="check">
+            <label for="">
+                <input type="checkbox" name="hobby" value="10">공부
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="20">게임
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="30">낚시
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="40">운동
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="50">음악감상
+            </label>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+</body>
+</html>
